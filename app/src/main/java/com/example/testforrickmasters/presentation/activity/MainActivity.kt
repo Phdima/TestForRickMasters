@@ -1,4 +1,4 @@
-package com.example.testforrickmasters.presentation
+package com.example.testforrickmasters.presentation.activity
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

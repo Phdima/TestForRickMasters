@@ -59,7 +59,7 @@ fun AgeSexView(
             )
             LazyRow {
                 item {
-                    CustomButton(
+                    PeriodSelectorForAgesPie(
                         selectedPeriod = selectedPeriod,
                         onPeriodSelected = viewModel::selectPeriod
                     )

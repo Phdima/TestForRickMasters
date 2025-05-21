@@ -10,7 +10,7 @@ import androidx.compose.ui.unit.sp
 import com.example.testforrickmasters.domain.model.TimePeriod
 
 @Composable
-fun CustomButton(
+fun PeriodSelectorForAgesPie(
     onPeriodSelected: (TimePeriod) -> Unit,
     selectedPeriod: TimePeriod,
 ) {

@@ -3,6 +3,7 @@ package com.example.testforrickmasters.presentation.viewModels
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.testforrickmasters.domain.model.TimeByPeriod
 import com.example.testforrickmasters.domain.model.TimePeriod
 import com.example.testforrickmasters.domain.model.UserDomain
 import com.example.testforrickmasters.domain.useCases.GetAgeDistributionUseCase
@@ -23,6 +24,8 @@ class VisitorViewModel @Inject constructor(
     init {
         loadData()
     }
+
+
 
     private fun loadData() {
         viewModelScope.launch {
