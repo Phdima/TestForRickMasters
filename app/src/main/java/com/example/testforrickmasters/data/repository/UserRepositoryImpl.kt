@@ -18,13 +18,9 @@ class UserRepositoryImpl(
                 username = dataObj.username,
                 isOnline = dataObj.isOnline,
                 age = dataObj.age,
-                avatarUrl = dataObj.files.map { file ->
-                    File(
-                        id = file.id,
-                        url = file.url,
-                        type = file.type
-                    )
-                }.toString()
+                avatarUrl = dataObj.files
+                    .firstOrNull { it.type == "avatar" }
+                    ?.url
             )
         }
     }
